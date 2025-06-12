@@ -68,4 +68,18 @@ public class FractionT {
     {
         return deno;
     }
+    @Override
+    public boolean equals(Object other)
+    { if(other instanceof FractionT)
+    {
+        FractionT that=(FractionT) other;
+        return  this.i==that.i && this.deno==that.deno;
+    }
+        return  false;
+    }
+//    @Override
+//    public String toString()
+//    {
+//     return String.format("%d/%d",i,deno);
+//    }
 }

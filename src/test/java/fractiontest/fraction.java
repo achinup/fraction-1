@@ -40,7 +40,12 @@ public class fraction {
     @Test
     public void numanddeno() throws  Exception{
         final FractionT sum=new FractionT(-9,3).addfract(new FractionT(-1,-2));
-        assertEquals(-16,sum.intValue());
+        assertEquals(-15,sum.intValue());
         assertEquals(6,sum.denovalue());
+    }
+
+    @Test
+    public void FinalTestCaseForAll() throws Exception {
+        assertEquals(new FractionT(-15,6),new FractionT(-9,3).addfract(new FractionT(-1,-2)));
     }
 }
